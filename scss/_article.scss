@@ -1,0 +1,99 @@
+/* Article */
+article {
+    text-align: left;
+    display: grid;
+    font-family: $secondary-font;
+    color: $primary-color;
+    grid-template-columns: 1fr 1fr 10px 740px 10px 1fr 1fr;
+  }
+  
+  article h1{
+    font-family: $main-font;
+    color: $primary-color;
+    font-weight: 700;
+    font-size: 3em;
+  }
+  
+  article h3{
+    font-family: $main-font;
+    color: $primary-color;
+    font-weight: 600;
+    font-size: 1.7;
+    padding-top: 2%;
+  }
+  
+  @media screen and (max-width: 768px) {
+    article {
+      display: grid;
+      grid-template-columns: 1fr 1fr 10px 400px 10px 1fr 1fr;
+    }
+    article h1 {
+      padding-top: 40px;
+      margin-bottom: 0px;
+    }
+    article .aside{
+      visibility: hidden;
+    }
+    figure img{
+      width: 400px
+    }
+  }
+  
+  article * {
+      grid-column: 4;
+  }
+  
+  article figure {
+    text-align: center;
+    grid-column: 1 / -1;
+    margin: 20px 30px;
+    margin-bottom: 50px;
+  }
+  
+  article .aside {
+      grid-column: 5 / -1;
+  }
+  
+  blockquote {
+      grid-column: 3 / span 2;
+      margin-top: 10px;
+      color: $light;
+      border-left: 3px solid $secondary-color;
+      padding-left: 10px;
+  }
+  
+  
+  article p {
+      --x-height-multiplier: 0.375;
+      --baseline-multiplier: 0.17;
+      letter-spacing: .01rem;
+      font-family: 'Crimson Text', serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.4em;
+      line-height: 1.58;
+      letter-spacing: -.003em;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+  }
+  
+  article li {
+    --x-height-multiplier: 0.375;
+    --baseline-multiplier: 0.17;
+    letter-spacing: .01rem;
+    font-family: 'Crimson Text', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.4em;
+    line-height: 1.5em;
+    letter-spacing: -.003em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  .aside {
+      margin: 30px 20px;
+      color: $light;
+      font-size: 1em;
+  }
+  

@@ -1,0 +1,38 @@
+
+footer {
+    margin-top: 2%;
+    padding-bottom: 1%;
+    text-align:center;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+    .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li{
+            padding: 0 0.5rem;
+            list-style: none;
+
+            i{
+                color: $primary-color;
+                font-size: 1.5rem;
+
+                &:hover{
+                    color: $secondary-color;
+                }
+            }
+        }
+        
+    }
+}
+
+.fixed {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+}
