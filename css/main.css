@@ -193,12 +193,12 @@ footer {
   font-weight: 500;
   font-size: 1em;
   position: absolute;
-  right: 64%;
+  right: 50%;
   top: 2%;
   background: #2EBFDA;
   text-align: center;
   border-radius: 20px;
-  padding: 6px 12px; }
+  padding: 6px 10px; }
 
 .project_card {
   display: inline-block;
