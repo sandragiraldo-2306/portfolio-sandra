@@ -157,9 +157,6 @@ p {
   text-align: center;
   z-index: 1; }
 
-.about-img {
-  border-radius: 8px; }
-
 footer {
   margin-top: 2%;
   padding-bottom: 1%;
@@ -381,3 +378,8 @@ article li {
 
 .input-focus {
   border-color: #2EBFDA; }
+
+.about {
+  text-align: left; }
+  .about p {
+    font-size: 1.2rem; }
